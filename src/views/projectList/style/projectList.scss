@@ -1,0 +1,100 @@
+.project-list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.list-right {
+  padding: 0px 24px;
+  flex: 1;
+  height: 100%;
+  background: #222222;
+  color: #fff;
+  font-size: 14px;
+  .list-header {
+    padding: 16px 24px;
+    .create-box {
+      padding-left: 40px;
+      height: 40px;
+      line-height: 40px;
+      width: 96px;
+      text-align: center;
+      border-radius: 20px 4px 4px 20px;
+      background: linear-gradient(90deg, #444444 0%, #2e2e2e 100%);
+      position: relative;
+      cursor: pointer;
+      .icon-db_plus {
+        height: 26px;
+        line-height: 26px;
+        width: 40px;
+        border-radius: 7px;
+        background: rgba($color: #444444, $alpha: 0.6);
+        position: absolute;
+        left: 0px;
+        top: 7px;
+      }
+      &::before {
+        content: '';
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        background: #F6B421;
+        left: 0;
+      }
+    }
+  }
+  .select-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    .search{
+      margin-right: 64px;
+    }
+    .drop-list {
+      margin-right: 16px;
+    }
+  }
+  .scroll-list {
+    height: calc(100% - 60px);
+    padding-right: 16px;
+    @include scrollBar(#666666, 10px);
+    .list-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 200px;
+      .list {
+        margin-bottom: 24px;
+        margin-right: 48px;
+      }
+    }
+    .no-project {
+      height: 240px;
+      width: 240px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #A4A4A4;
+      font-size: 14px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-100%);
+      >span {
+        font-size: 64px;
+      }
+      .no-result {
+        margin: 26px 0px;
+      }
+      .to-back {
+        width: 120px;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 4px;
+        border: 1px solid #F6B421;
+        color: #F6B421;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.el-tabs__nav-wrap {
+  &::after {
+    height: 1px!important;
+    background-color: #424242;  
+  }
+  .el-tabs__active-bar{
+    height: 2px;
+    border-radius: 10px;
+    background-color: #F6B421;
+  }
+  .el-tabs__item {
+    padding: 0px 30px!important;
+    font-size: 16px;
+    font-weight: normal;
+    color: #A0A0A0;
+  }
+  .el-tabs__item.is-active{
+    color: #FCF8DF;
+    font-size: 16px;
+  }
+}
+.el-tabs__header{
+  margin: 0 0 8px;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #fff;
+}
+.el-checkbox__label {
+  color: #fff;
+}
+
+.el-radio {
+  color: #fff;
+}
+.el-radio__input.is-checked + .el-radio__label {
+  color: #fff;
+}
+
+.el-collapse {
+  border: none;
+  font-size: 12px;
+}
+.el-collapse-item {
+  margin-bottom: 4px;
+  .el-collapse-item__header {
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    color: #FCF8DF;
+    font-size: 14px;
+    background: #F9F9F9;
+    border-radius: 4px;
+    border-bottom: none;
+    background: #424242;
+    .el-collapse-item__arrow {
+      margin: 0 12px 0 8px;
+      color: #A4A4A4;
+      font-weight: bold;
+    }
+  }
+  .el-collapse-item__wrap {
+    background: none;
+    border: none;
+  }
+  .el-collapse-item__content {
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-top: 7px;
+    background: #222222;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+.el-pagination{
+  font-weight: 300;
+  button:disabled {
+    background: none;
+  }
+  .el-input__inner {
+    background: none;
+    border: none;
+  }
+  .el-icon-more {
+    color: #666666;
+  }
+}
+
+.el-pager li.active {
+  color: #F6B421;
+  font-size: 14px;
+}
+.el-pager li {
+  color: #666666;
+  font-size: 16px;
+  min-width: 28px;
+  margin-right: 4px;
+  font-size: 14px;
+  text-decoration: underline;
+  background: none;
+  &:hover {
+    color: #F6B421;
+  }
+}
+.el-pager li.el-icon-more,.el-pager .active{
+  text-decoration: none;
+  color: #666666;
+}
+.el-pagination{
+  font-weight: normal;
+}
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+  color: #F6B421;
+  font-weight: 900;
+  font-size: 16px;
+  background: none;
+  .el-icon{
+    font-size: 18px;
+    font-weight: 900;
+  }
+  &:hover {
+    color: #F6B421;
+  }
+}

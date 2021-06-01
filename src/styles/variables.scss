@@ -1,0 +1,23 @@
+// @import './styles/common.scss';
+// 超出宽度的文字用省略号显示
+@mixin ellipsis {
+  overflow: hidden; 
+  text-overflow:ellipsis; 
+  white-space: nowrap;
+}
+
+@mixin scrollBar($bgColor:#D8D8D8,$width:10px) {
+  &::-webkit-scrollbar {
+    width: $width;
+    background: #444444;
+    border-radius: 5px;
+  }
+
+  /* 滚动条滑块 */
+  &::-webkit-scrollbar-thumb {
+    width: $width;
+    height: 10px;
+    border-radius: 5px;
+    background: $bgColor;
+  }
+}

@@ -1,0 +1,58 @@
+
+.v-tooltip{
+  position: absolute;
+  min-width: 200px;
+  max-width: 600px;
+  min-height: 50px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid;
+  line-height: 1;
+  text-align: left;
+  z-index: 9999;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #2193F6;
+  border: none;
+  background: #333333;
+  font-size: 12px;
+  .tooltip-title{
+    padding: 4px 10px;
+    color: #fff;
+  }
+  .tooltip-row{
+    padding: 4px 10px;
+  }
+}
+.v-tooltip-up {
+  &::before {
+    content: '';
+    position: absolute;
+    left: -5.1px;
+    top: 10px;
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    // border-top: 1px solid;
+    // border-left: 1px solid;
+    border-color: #2193F6;
+    background: #333333;
+    transform: rotate(-45deg);
+  }
+}
+.v-tooltip-down{
+  &::before {
+    content: '';
+    position: absolute;
+    left: -5.1px;
+    bottom: 15px;
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    // border-top: 1px solid;
+    // border-left: 1px solid;
+    // border-color: #2193F6;
+    background: #333333;
+    transform: rotate(-45deg);
+  }
+}

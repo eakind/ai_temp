@@ -1,0 +1,185 @@
+.result {
+  height: 100%;
+  width: 100%;
+  .header{
+    padding: 0px 96px 0px 24px;
+    height: 120px;
+    width: calc(100% - 120px);
+    background: #2B2B2B;
+    position: relative;
+    .model-name {
+      height: 40px;
+      line-height: 40px;
+      margin-left: 18px;
+      font-size: 16px;
+      color: #FCF8DF;
+      font-weight: 600;
+      >span {
+        margin-left: 24px;
+        font-size: 12px;
+        color: #A4A4A4;
+        font-weight: normal;
+      }
+    }
+    .model-type {
+      height: 24px;
+      line-height: 24px;
+      width: 152px;
+      padding: 0px 4px;
+      border-radius: 4px;
+      background: #444444;
+      opacity: 0.5;
+      font-size: 12px;
+      margin-left: 18px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      height: 72px;
+      width: 8px;
+      display: inline-block;
+      border-radius: 0px 0px 2px 2px;
+      background: linear-gradient(89.99deg, #F6B421 50%, #2b2b2b 100%);
+    }
+  }
+  .return-panel {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .return {
+      cursor: pointer;
+      >span {
+        color: #F6B421;
+        display: inline-block;
+        transform: rotate(180deg);
+      }
+    }
+    .btn-box {
+      position: relative;
+      .output-btn {
+        padding-left: 40px;
+        height: 36px;
+        line-height: 36px;
+        width: 96px;
+        text-align: center;
+        border-radius: 20px 4px 4px 20px;
+        background: linear-gradient(90deg, #444444 0%, #2e2e2e 100%);
+        position: relative;
+        cursor: pointer;
+        .icon-db_export {
+          height: 24px;
+          line-height: 24px;
+          width: 36px;
+          border-radius: 7px;
+          font-size: 16px;
+          position: absolute;
+          left: 0px;
+          top: 7px;
+        }
+        &::before {
+          content: '';
+          height: 36px;
+          width: 36px;
+          border-radius: 50%;
+          position: absolute;
+          background: linear-gradient(180deg, #F6B421 0%, #483F2A 30%, #483F2A 80%, #F6B421 100%);
+          left: 0;
+        }
+      }
+    }
+  }
+  .result-body {
+    width: 100%;
+    height: calc(100% - 140px);
+    display: flex;
+    .result-left {
+      height: 100%;
+      width: 136px;
+      padding: 8px 8px 8px 16px;
+      .menu-item {
+        height: 36px;
+        line-height: 36px;
+        width: 120px;
+        border-radius: 4px;
+        background: #2B2B2B;
+        padding: 0px 8px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        opacity: 0.5;
+        position: relative;
+      }
+      .item-active {
+        opacity: 1.0;
+        &::before {
+          content: '';
+          height: 20px;
+          width: 2px;
+          position: absolute;
+          background: #F6B421;
+          left: 0px;
+          top: 8px;
+        }
+      }
+    }
+    .result-right {
+      height: 100%;
+      flex: 1;
+      padding-right: 96px;
+      padding-left: 16px;
+      position: relative;
+      .right-header {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        .drop-model-list {
+          width: 296px;
+          margin: 0px 24px 0px 8px;
+        }
+        .drop-list {
+          margin: 0px 24px 0px 8px;
+        }
+        .psi-list {
+          margin-left: 24px;
+          width: 150px;
+        }
+        .header-right {
+          position: absolute;
+          right: 96px;
+          top: 8px;
+          >div {
+            display: inline-block;
+            width: 120px;
+            height: 36px;
+            line-height: 36px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            background: #2B2B2B;
+            border: 1px solid #444444;
+            &:nth-child(1) {
+              margin-right: 24px;
+            }
+            >span {
+              color: #F6B421;
+              margin-right: 8px;
+            }
+          }
+        }
+        .total-num{
+          margin-right: 30px;
+        }
+      }
+      .content {
+        width: 100%;
+        margin-top: 8px;
+        height: calc(100% - 50px);
+      }
+    }
+  }
+  .show-name {
+    line-height: 32px;
+    margin-left: 8px;
+  }
+}

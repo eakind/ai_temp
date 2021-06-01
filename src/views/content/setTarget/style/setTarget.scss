@@ -1,0 +1,131 @@
+.title {
+  line-height: 40px;
+  color: #FCF8DF;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  &::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #F6B421;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+.feature-box {
+  display: flex;
+  align-items: center;
+  >span:nth-child(1) {
+    color: #FCF8DF;
+    font-weight: bold;
+    margin-right: 16px;
+  }
+}
+.legend {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.tips {
+  color: #A4A4A4;
+  font-size: 12px;
+  padding: 12px 0px;
+}
+.select-box {
+  height: 36px;
+  line-height: 36px;
+  width: 80px;
+  text-align: center;
+  border-radius: 4px;
+  background: #2B2B2B;
+  border: 1px solid #444444;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  >span {
+    color: #F6B421;
+    padding-left: 8px;
+  }
+  .select-panel {
+    position: absolute;
+    left: 85px;
+    top: 0px;
+  }
+}
+.active {
+  border: 1px solid #F6B421;
+}
+.chart-box {
+  margin-top: 18px;
+  height: 216px;
+  width: calc(100% - 204px);
+  position: relative;
+  .chart {
+    height: 216px;
+    width: calc(100% - 500px);
+  }
+  .chart-legend {
+    height: 248px;
+    width: 368px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+.target-chart {
+  position: relative;
+  .drop-list {
+    width: 240px;
+    height: 36px;
+    position: absolute;
+    top: 0px;
+    right: 200px;
+  }
+}
+.selected-chart {
+  margin-top: 24px;
+  position: relative;
+  .drop-list {
+    width: 96px;
+    height: 36px;
+    position: absolute;
+    top: 80px;
+    right: 270px;
+  }
+  .download {
+    height: 36px;
+    line-height: 36px;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    background: #2B2B2B;
+    border: 1px solid #444444;
+    position: absolute;
+    top: 80px;
+    right: 110px;
+    box-sizing: border-box;
+    cursor: pointer;
+    >span {
+      color: #F6B421;
+    }
+  }
+  .selected-chart-box {
+    display: flex;
+    .chart {
+      height: 316px;
+      width: calc(100% - 500px);
+      margin-right: 24px;
+    }
+    .chart-legend {
+      flex: 1;
+    }
+  }
+  .operate-box {
+    position: absolute;
+    top: 40px;
+    right: 180px;
+  }
+}

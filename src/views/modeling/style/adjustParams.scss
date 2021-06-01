@@ -1,0 +1,132 @@
+.adjust-params{
+  height: 100%;
+  width: 100%;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #fff;
+  .title {
+    line-height: 32px;
+    position: relative;
+    &::after {
+      content: '';
+      height: 1px;
+      width: 32px;
+      background: #F6B421;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+  }
+  .title-tip {
+    font-size: 12px;
+    color: #A4A4A4;
+    margin-top: 3px;
+  }
+  .operate-btn {
+    width: 608px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0px 8px 0px;
+    >.left {
+      height: 32px;
+      line-height: 32px;
+      width: 120px;
+      background: #333;
+      border-radius: 4px;
+      text-align: center;
+      position: relative;
+      &::before {
+        content: '';
+        width: 16px;
+        height: 4px;
+        background: #F6B421;
+        border-radius: 4px;
+        position: absolute;
+        left: 0px;
+        top: 14px;
+      }
+    }
+    >.right {
+      width: 116px;
+      padding-left: 10px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 4px;
+      text-align: center;
+      background: #2B2B2B;
+      border: 1px solid #444444;
+      cursor: pointer;
+      .icon-db_arrow {
+        color: #F6B421;
+        margin-left: 10px;
+      }
+    }
+    .auto-btn {
+      width: 80px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 4px;
+      text-align: center;
+      color: #2193F6;
+      border: 1px solid #2193F6;
+      cursor: pointer;
+    }
+  }
+  .table-box {
+    width: 608px;
+    max-height: calc(100% - 280px);
+    margin-top: 24px;
+    .list-box {
+      height: 36px;
+      width: 608px;
+      border-radius: 4px;
+      background: #333333;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .list {
+      background: #444444;
+    }
+    .table-body {
+      height: calc(100% - 40px);
+      @include scrollBar(#a4a4a4, 5px);
+    }
+    .check-box {
+      display: inline-block;
+      width: 68px;
+      padding: 0px 16px;
+    }
+    .model-name {
+      width: calc(100% - 200px);
+      text-align: left;
+    }
+    .type-name {
+      width: 100px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .manual-style {
+      text-decoration: underline;
+      color: #F6B421;
+    }
+  }
+  .bottom-panel {
+    border-top: 1px solid #424242;
+    padding-top: 18px;
+  }
+  .panel {
+    padding: 8px 16px;
+    width: 576px;
+    border-radius: 4px;
+    background: #333333;
+    .panel-list {
+      line-height: 32px;
+      >span:nth-child(1) {
+        display: inline-block;
+        width: 120px;
+      }
+    }
+  }
+}

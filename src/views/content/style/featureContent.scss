@@ -1,0 +1,92 @@
+.feature-content {
+  height: 100%;
+  padding: 8px;
+  padding-right: 0px;
+  font-size: 14px;
+  color: #fff;
+  .bottom-content {
+    height: calc(100% - 450px);
+  }
+  .tips {
+    color: #A4A4A4;
+    font-size: 12px;
+    padding-bottom: 12px;
+  }
+  .content-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .target-feature {
+      height: 300px;
+      width: 25%;
+    }
+    .processing-feature {
+      margin-right: 5%;
+      height: 300px;
+      flex: 1;
+    }
+    .feature-operate {
+      height: 260px;
+      width: 296px;
+    }
+  }
+  .select-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .drop-list {
+    width: 192px;
+    height: 32px;
+  }
+  .search-input {
+    width: 240px;
+    height: 32px;
+    margin-left: 12px;
+  }
+  .title {
+    margin-right: 8px;
+    line-height: 32px;
+    width: 160px;
+    padding-left: 24px;
+    border-radius: 4px;
+    background: #333333;
+    position: relative;
+    margin: 8px 0px;
+    &::before {
+      content: '';
+      border-radius: 4px;
+      height: 4px;
+      width: 16px;
+      top: 14px;
+      left: 0px;
+      position: absolute;
+      background: #fff;
+    }
+  }
+  .sort-list {
+    height: 32px;
+    width: 120px;
+    margin-left: 16px;
+  }
+  .feature-table {
+    margin-top: 12px;
+    width: 100%;
+    height: calc(100% - 120px);
+    /deep/ {
+      .body-list {
+        background: #444444;
+      }
+      .item {
+        width: 12% !important;
+        &:nth-child(2) {
+          width: 20% !important;
+        }
+      }
+    }
+  }
+}
